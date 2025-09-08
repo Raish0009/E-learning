@@ -38,10 +38,10 @@
             <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
             <li class="nav-item"><a class="nav-link text-white me-5" href="#">About Us</a></li>
           </ul>
-        </div>
-        <div class="d-flex gap-3">
-          <button class="btn btn-light rounded-pill px-4 h4">Login</button>
-          <button class="btn btn-info text-white rounded-pill px-3 h4">Sign Up</button>
+          <div class="d-flex gap-3">
+            <button class="btn  rounded-pill px-4 h4">Login</button>
+            <button class="btn btn-info text-white rounded-pill px-3 h4">Sign Up</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -56,14 +56,14 @@
             <p class="text-white fs-5 pe-6">TOTC is an interesting platform that will teach you in more an interactive
               way
             </p>
-            <a href="#" class="btn btn-info text-white rounded-pill px-3 fs-5">Join for free</a>
+            <a href="#" class="btn btn-info text-white rounded-pill px-4 py-3 fs-5">Join for free</a>
 
             <div class="d-inline-block ms-5 text-center">
-              <div class="d-inline-block text-center align-items-center rounded-circle py-2 px-2 bg-white play-icon">
-                <img src="./assets/svg/play_icon.svg" alt="play-icon" class="img-fluid mt-3"
+              <div class="d-inline-block text-center align-items-center  play-icon">
+                <img src="./assets/svg/play-icon.svg" alt="play-icon" class="img-fluid mt-3"
                   aria-label="click to play button">
               </div>
-              <span>Watch how it works</span>
+              <span class="fs-5">Watch how it works</span>
             </div>
           </div>
           <div class="col-lg-6">
@@ -73,11 +73,18 @@
       </div>
     </section>
 
-    <!-- Our Success Section -->
+    <!-- Our Success  -->
     <section class="our-success text-center py-5">
       <div class="container">
-        <h2>Our Success</h2>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row justify-content-center my-5">
+          <div class="col-sm-6 ">
+            <h2>Our Success</h2>
+            <p class="text-muted">Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec
+              nam
+              et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. </p>
+          </div>
+        </div>
+
         <div class="row justify-content-center">
           <div class="col-6 col-md-4 col-lg-2">
             <div class="metric">
@@ -112,11 +119,11 @@
         </div>
       </div>
     </section>
- 
+
   </main>
 
   <footer>
-    <section class="py-6 mt-6">
+    <section class="py-6 mt-6 text-light">
       <div class="container">
         <div class="row text-center">
           <div class="col-lg-4"></div>
@@ -129,14 +136,14 @@
 
             <p class="gray-100">Subscribe to get our Newsletter</p>
             <form action="#" class="d-flex gap-3">
-              <input type="text" class="form-control rounded-pill">
-              <input type="button" value="Subscribe" class="btn btn-primary rounded-pill">
+              <input type="text" class="form-control rounded-pill bg-transparent" placeholder="Your Email">
+              <input type="button" value="Subscribe" class="btn btn-primary text-white rounded-pill">
             </form>
 
-            <ul class="nav fs-6 py-5 text-center">
-              <li class="nav-item"><a href="#" class="nav-link p-0">Careers</a></li>
-              <li class="nav-item"><a href="#" class="nav-link p-0">Privacy Policy</a></li>
-              <li class="nav-item"><a href="#" class="nav-link p-0">Terms & Conditions</a></li>
+            <ul class="nav fs-6 py-5 text-center gap-3">
+              <li class="nav-item"><a href="#" class="nav-link text-light p-0">Careers</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-light p-0">Privacy Policy</a></li>
+              <li class="nav-item"><a href="#" class="nav-link text-light p-0">Terms & Conditions</a></li>
             </ul>
 
             <p>© 2021 Class Technologies Inc. </p>
@@ -153,76 +160,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Hero Section
-  <section class="hero py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        Hero Text
-        <div class="col-md-6">
-          <h1 class="display-4">Learn <span class="text-primary">Without Limits</span></h1>
-          <p class="lead">Expand your knowledge with our expert-led courses and community support. Join thousands of learners worldwide.</p>
-          <p>
-            <a href="#" class="btn btn-primary btn-lg me-2">Join for free</a>
-            <a href="#" class="btn btn-outline-light btn-lg">Watch how it works</a>
-          </p>
-          Statistics
-          <div class="d-flex stats align-items-center mt-4">
-            <div class="me-4 d-flex align-items-center">
-              <i class="fa-solid fa-user-graduate fa-2x"></i>
-              <span class="ms-2">250k+ Assisted Students</span>
-            </div>
-            <div class="me-4 d-flex align-items-center">
-              <i class="fa-solid fa-book-open fa-2x"></i>
-              <span class="ms-2">1.2k+ Courses</span>
-            </div>
-            <div class="d-flex align-items-center">
-              <i class="fa-solid fa-globe fa-2x"></i>
-              <span class="ms-2">50+ Countries</span>
-            </div>
-          </div>
-        </div>
-        Hero Image & Popups
-        <div class="col-md-6">
-            <img src="./assets/images/banner_right.png" alt="" class="img-fluid">
-          <div class="position-relative">
-            Popups (toasts)
-            <div class="toast position-absolute top-0 start-0 m-3 p-2 bg-white shadow-sm border">
-              <div class="toast-header">
-                <strong class="me-auto">Class Reminder</strong>
-                <small>Now</small>
-              </div>
-              <div class="toast-body">User Experience Class at 12:00 PM</div>
-            </div>
-            <div class="toast position-absolute bottom-0 end-0 m-3 p-2 bg-white shadow-sm border">
-              <div class="toast-header">
-                <strong class="me-auto text-success">Success</strong>
-                <small>Just now</small>
-              </div>
-              <div class="toast-body">Congratulations, Your admission completed</div>
-            </div>
-            Hero Image
-            <img src="https://via.placeholder.com/600x400" class="img-fluid rounded" alt="Student studying">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
