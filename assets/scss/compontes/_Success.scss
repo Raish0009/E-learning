@@ -1,0 +1,64 @@
+.gradient-text {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background-clip: text;
+  color: transparent;
+  font-weight: 300;
+  font-style: Light;
+}
+%circle {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+%box-shape {
+  content: "";
+  position: absolute;
+  width: 138px;
+  height: 138px;
+  border-radius: 20px;
+  z-index: -1;
+}
+.section-text {
+  position: relative;
+  padding-right: 50px;
+
+  &::before {
+    @extend %circle;
+    right: 0;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background: #33efa0;
+  }
+}
+.section-title {
+  position: relative;
+  display: inline-block;
+  &::before {
+    @extend %circle;
+    top: -15px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    background: #33efa0;
+    z-index: -1;
+  }
+}
+.video-card {
+  position: relative;
+
+  &::before {
+    @extend %box-shape;
+    background: #2dd4bf;
+    top: -20px;
+    left: -20px;
+  }
+
+  &::after {
+    @extend %box-shape;
+    background: #33efa0;
+    bottom: -20px;
+    right: -20px;
+  }
+}

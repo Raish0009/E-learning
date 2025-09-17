@@ -2,161 +2,1597 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-learning</title>
-  <meta name="robots" content="noindex nofollow">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net/" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-  <!-- custome css link -->
-  <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>TOTC - E-Learning Platform</title>
+    <meta name="description"
+        content="TOTC by Indixpert is an all-in-one e-learning platform that enables educators to create, manage, and share online classes, digital courses, and learning resources effortlessly.">
+    <meta name="keywords"
+        content="TOTC, Indixpert, Raish Mohammad, e-learning, online education, teaching platform, digital learning, course management system, virtual classroom, teaching tools">
+    <meta name="author" content="Raish Mohammad">
+    <meta name="company" content="Indixpert">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="TOTC - All-in-One E-Learning Platform by Indixpert">
+    <meta property="og:description"
+        content="Empower education with TOTC by Indixpert — an advanced e-learning platform for managing online classes, digital courses, and resources in one place.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/">
+    <meta property="og:image" content="https://yourwebsite.com/assets/preview-image.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TOTC - All-in-One E-Learning Platform">
+    <meta name="twitter:description"
+        content="TOTC by Indixpert helps educators and learners succeed with easy class management, digital courses, and resource sharing.">
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/preview-image.webp">
+
+
+
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
-  <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg shadow-sm bg-primary">
-      <div class="container pb-4">
-        <a class="navbar-brand text-white fw-bold" href="./index.html">
-          <img src="./assets/svg/Logo.svg" alt="Logo" class="img-fluid" aria-label="click here to go to home page">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav gap-5">
-            <li class="nav-item"><a class="nav-link text-white active" aria-current="page" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#">Courses</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#">Careers</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
-            <li class="nav-item"><a class="nav-link text-white me-5" href="#">About Us</a></li>
-          </ul>
-          <div class="d-flex gap-3">
-            <button class="btn  rounded-pill px-4 h4">Login</button>
-            <button class="btn btn-info text-white rounded-pill px-3 h4">Sign Up</button>
-          </div>
+    <header>
+        <div class="container p-0">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container gy-5">
+                    <a class="navbar-brand fw-bold text-white d-flex align-items-center " href="#">
+                        <img src="./assets/image/logo.webp" alt="TOTC" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                        <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                            <li><a href="#" class="btn btn-light">Login</a></li>
+                            <li><a href="#" class="btn btn-success-300">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero_section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 pt-6 mt-6">
-            <h1 class="text-white fw-bold"><span>Studying</span> Online is now much easier</h1>
-            <p class="text-white fs-5 pe-6">TOTC is an interesting platform that will teach you in more an interactive
-              way
-            </p>
-            <a href="#" class="btn btn-info text-white rounded-pill px-4 py-3 fs-5">Join for free</a>
-
-            <div class="d-inline-block ms-5 text-center">
-              <div class="d-inline-block text-center align-items-center  play-icon">
-                <img src="./assets/svg/play-icon.svg" alt="play-icon" class="img-fluid mt-3"
-                  aria-label="click to play button">
-              </div>
-              <span class="fs-5">Watch how it works</span>
+    </header>
+    <main>
+        <!-- first section  -->
+        <section class="curved-mask py-4">
+            <div class="container">
+                <div class="row justify-content-center  align-items-center ">
+                    <div class="col-md-6 col-sm-12 lh-lg">
+                        <h1 class="text-white py-3">
+                            <span class="text-danger lh-lg ">Studying</span> Online is now much easier
+                        </h1>
+                        <p class="text-white">
+                            TOTC is an interesting platform that will teach you in a more interactive way
+                        </p>
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="#" class="btn btn-success-300 px-4 rounded-pill">Join for Free</a>
+                            <div class="d-flex align-items-center gap-2">
+                                <button
+                                    class="d-flex justify-content-center align-items-center rounded-circle border-0 p-2">
+                                    <img src="./assets/svg/play.svg" alt="Play" class="img-fluid img">
+                                </button>
+                                <span class="text-dark">Watch how it works</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <img src="./assets/image/std.webp" alt="Student" class="img-fluid" />
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <img src="./assets/images/banner_right.webp" alt="" class="img-fluid">
-          </div>
+        </section>
+        <!-- second section -->
+        <section>
+            <div class="container text-center Success py-5">
+                <h2 class="fw-bold mb-3">Our Success</h2>
+                <p class="text-muted mb-5">
+                    Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae
+                    sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices
+                    eu ornare tristique velit nisl orci.
+                </p>
+
+                <div class="row g-4">
+                    <div class="col-6 col-md">
+                        <h3 class="display-5 fw-bold gradient-text">15K+</h3>
+                        <p class="fw-semibold text-dark">Students</p>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h3 class="display-5 fw-bold gradient-text">75%</h3>
+                        <p class="fw-semibold text-dark">Total success</p>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h3 class="display-5 fw-bold gradient-text">35</h3>
+                        <p class="fw-semibold text-dark">Main questions</p>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h3 class="display-5 fw-bold gradient-text">26</h3>
+                        <p class="fw-semibold text-dark">Chief experts</p>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h3 class="display-5 fw-bold gradient-text">16</h3>
+                        <p class="fw-semibold text-dark">Years of experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- third section  -->
+        <section class="text-center py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-3">
+                    All-In-One <span class="text-info">Cloud Software.</span>
+                </h2>
+                <p class="text-muted mb-5">
+                    TOTC is one powerful online software suite that combines all the tools
+                    needed to run a successful school or office.
+                </p>
+                <div class="row">
+                    <div class="col-md-4 pt-5 ">
+                        <div class="card shadow border-0 h-100 position-relative ">
+                            <div class="rounded-circle bg-info d-flex 
+                             p-3 mx-auto align-items-center justify-content-center 
+                             position-absolute top-0 start-50 translate-middle">
+                                <img src="./assets/svg/Vector.svg" alt="Schedule Icon" class="img-fluid img">
+                            </div>
+                            <div class="card-body text-center mt-5">
+                                <h5 class="fw-bold mt-4">Online Billing, Invoicing, & Contracts</h5>
+                                <p class="text-muted">
+                                    Simple and secure control of your organization s financial and legal transactions.
+                                    Send customized invoices and contracts
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pt-5">
+                        <div class="card shadow border-0 h-100 position-relative ">
+                            <div class="rounded-circle bg-success d-flex p-3 mx-auto d-flex align-items-center justify-content-center position-absolute 
+                            top-0 start-50 translate-middle">
+                                <img src="./assets/svg/card2.svg" alt="Schedule Icon" class="img-fluid img">
+                            </div>
+                            <div class="card-body text-center mt-5">
+                                <h5 class="fw-bold mt-4">Easy Scheduling & Attendance Tracking</h5>
+                                <p class="text-muted">
+                                    Schedule and reserve classrooms at one campus or multiple campuses.
+                                    Keep detailed records of student attendance
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 pt-5">
+                        <div class="card shadow border-0 h-100 position-relative pt-5">
+                            <div class="rounded-circle bg-info mx-auto d-flex align-items-center p-3
+                                 justify-content-center position-absolute top-0 start-50 translate-middle">
+                                <img src="./assets/svg/card3.svg" alt="Customer Icon" class="img-fluid img">
+                            </div>
+                            <div class="card-body text-center mt-4">
+                                <h5 class="fw-bold">Customer Tracking</h5>
+                                <p class="text-muted">
+                                    Automate and track emails to individuals or groups. Skilline s built-in system helps
+                                    organize your organization
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- fifth section  -->
+        <section class="py-5">
+            <div class="container px-5">
+                <div class="row text-center">
+                    <h2 class="fw-bold mb-3">
+                        What is <span class="text-info">TOTC?</span>
+                    </h2>
+                    <p class="text-muted mb-5">
+                        TOTC is a platform that allows educators to create online classes whereby they can
+                        store the course materials online; manage assignments, quizzes and exams; monitor
+                        due dates; grade results and provide students with feedback all in one place.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 ">
+                        <div class="card border-0 rounded-4 overflow-hidden position-relative">
+                            <img src="./assets/image/INSTRUCTORS.webp" class="card-img-top" alt="">
+                            <div
+                                class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-50">
+                                <h4 class="text-white fw-bold">FOR INSTRUCTORS</h4>
+                                <a href="#" class="btn btn-outline-light rounded-pill mt-3 px-4">
+                                    Start a class today
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 mt-4 mt-md-0">
+                        <div class="card border-0 rounded-4 overflow-hidden position-relative">
+                            <img src="./assets/image/stdudent.webp" class="card-img-top" alt="">
+                            <div
+                                class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center ">
+                                <h4 class="text-white fw-bold">FOR STUDENTS</h4>
+                                <a href="#" class="btn btn-primary text-white rounded-pill mt-3 px-4">
+                                    Enter access code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="section-title">
+                            Everything you can do in a physical classroom,
+                            <span>you can do with TOTC</span>
+                        </h2>
+                        <p class="section-text">
+                            TOTC s school management software helps traditional and online schools
+                            manage scheduling, attendance, payments and virtual classrooms all in
+                            one secure cloud-based system.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                    <div class="col-md-6 position-relative">
+                        <div class="video-card">
+                            <img src="./assets/image/classroom.webp" alt="Classroom" class="img-fluid rounded-4">
+                            <button
+                                class="d-flex position-absolute top-50 start-50 justify-content-center align-items-center rounded-circle border-0 p-2">
+                                <img src="./assets/svg/play.svg" alt="Play" class="img-fluid img">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center row pb-lg-5">
+                    <h2 class="">Our <span class="text-success">Features</span></h2>
+                    <p>
+                        This very extraordinary feature, can make learning activities more efficient
+                    </p>
+                </div>
+                <div class="row align-items-center py-6">
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <h3>
+                            A <span class="text-success">user interface </span>designed for the classroom
+                        </h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="./assets/svg/list2.svg" class="img-fluid px-2 list-image" />
+                                Teachers don’t get lost in the grid view and have a dedicated Podium space.
+                            </li>
+                            <li>
+                                <img src="./assets/svg/list1.svg" class="img-fluid px-2 list-image" />
+                                TA’s and presenters can be moved to the front of the class.
+                            </li>
+                            <li>
+                                <img src="./assets/svg/list3.svg" class="img-fluid px-2 list-image" />
+                                Teachers can easily see all students and class data at one time.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <div>
+                            <img src="./assets/image/Group73.webp" alt="User Interface" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row  justify-content-between py-5">
+                    <div class="col-lg-4 text-left d-flex flex-column justify-content-center align-items-center  ">
+                        <h3> <span class="text-success">Tools</span> For Teachers And Learners</h3>
+                        <p>
+                            Class has a dynamic set of teaching tools built to be deployed and used during class.
+                            Teachers can handout assignments in real-time for students to complete and submit.
+                        </p>
+                    </div>
+                    <div class="col-lg-5 m-0 p-0">
+                        <img src="./assets/image/Group 122.webp" alt="Tools for Teachers"
+                            class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-between mb-5">
+
+                    <div class="col-lg-5 order-2 order-lg-1">
+                        <div>
+                            <img src="./assets/image/Group92.webp" alt="Assessments" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <h3>Assessments, <span class="text-success"> Quizzes</span>, Tests</h3>
+                        <p class="feature-text">
+                            Easily launch live assignments, quizzes, and tests. Student results are automatically
+                            entered in the online gradebook.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6">
+                        <h3> <span class="text-success">Class Management</span> Tools for Educators</h3>
+                        <p>
+                            Class provides tools to help run and manage the class such as Class Roster, Attendance, and
+                            more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 ">
+                        <div>
+                            <img src="./assets/image/Group124.webp" alt="Class Management"
+                                class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row align-items-center justify-content-between gap-3">
+                    <div class="col-lg-5 order-2 order-lg-1">
+                        <div>
+                            <img src="./assets/image/Group106.webp" alt="One-on-One Discussions"
+                                class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <h3>One-on-One <span class="text-success"> Discussions</span></h3>
+                        <p>
+                            Teachers and teacher assistants can talk with students privately without leaving the Zoom
+                            environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="#" class="btn btn-light btn-outline-primary">See more features</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore-course">
+            <div class="container-custom container p-0">
+                <div class="py-5 text-dark">
+                    <h2 class="fw-bold text-dark">Explore Course</h2>
+                    <p class="text-muted">Ut sed eros finibus, placerat orci id, dapibus.</p>
+                </div>
+                <div class="row justify-content-between p-0">
+                    <div class="col-md-6 sol-sm-4 ">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="./assets/svg/Exploer_1.svg" />
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 class="text-dark"> Lorem Ipsum</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-4 d-flex justify-content-end">
+                        <p class="info-200 fs-3">See all
+                            <i class="blod bi-arrow-right fs-4 info-200"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="row  course-wrapper hover-div align-items-center justify-content-between  gap-4 px-4">
+                    <div class="img-div position-relative p-0 overflow-hidden">
+                        <div class="explore-card card col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center  text-vertical bg-orange p-0 ">
+                            Ut Sed Eros
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-pink text-vertical p-0 ">
+                            Curabitur Egestas
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-purple p-0 text-vertical">
+                            Quisque Conseq…
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0 overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center text-vertical bg-primary p-0 ">
+                            Cras Convallis
+                        </div>
+                    </div>
+
+                    <div class="img-div position-relative p-0  overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center text-vertical bg-pink p-0 ">
+                            Vestibulum fauci…
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-success text-vertical p-0 ">
+                            Ut Sed Eros
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0 overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-green  p-0 text-vertical ">
+                            Vestibulum faucibu
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden active ">
+                        <div class="explore-card  card col-sm-12 card border-0 shadow-sm   ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8  col-sm-6 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-sm-5 fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-xl-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center text-vertical justify-content-center bg-green p-0 ">
+
+                            Cras Convallis
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row justify-content-between py-6">
+                    <div class="col-md-6 sol-sm-4 ">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="./assets/svg/Exploer_4.svg" />
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 class="text-dark"> Aenean Facilisis</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-4 d-flex justify-content-end">
+                        <p class="info-200 fs-3">See all
+                            <i class="blod bi-arrow-right fs-4 info-200"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="row  course-wrapper hover-div align-items-center justify-content-between  gap-4 px-4">
+                    <div class="img-div position-relative p-0 overflow-hidden">
+                        <div class="explore-card card col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center  text-vertical bg-orange p-0 ">
+                            Ut Sed Eros
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden ">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-pink text-vertical p-0 ">
+                            Curabitur Egestas
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-purple p-0 text-vertical">
+                            Quisque Conseq…
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0 overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center text-vertical bg-primary p-0 ">
+                            Cras Convallis
+                        </div>
+                    </div>
+
+                    <div class="img-div position-relative p-0 active  overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center text-vertical bg-pink p-0 ">
+                            Vestibulum fauci…
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-success text-vertical p-0 ">
+                            Ut Sed Eros
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0 overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-green  p-0 text-vertical ">
+                            Vestibulum faucibu
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden ">
+                        <div class="explore-card  card col-sm-12 card border-0 shadow-sm   ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8  col-sm-6 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-sm-5 fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-xl-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center text-vertical justify-content-center bg-green p-0 ">
+
+                            Cras Convallis
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between py-6">
+                    <div class="col-md-6 sol-sm-4 ">
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <img src="./assets/svg/Exploer_4.svg" />
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 class="text-dark"> Aenean Facilisis</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-4 d-flex justify-content-end">
+                        <p class="info-200 fs-3">See all
+                            <i class="blod bi-arrow-right fs-4 info-200"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="row  pb-5 course-wrapper hover-div align-items-center justify-content-between  gap-4 px-4">
+                    <div class="img-div position-relative p-0 overflow-hidden">
+                        <div class="explore-card card col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center  text-vertical bg-orange p-0 ">
+                            Ut Sed Eros
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0 active overflow-hidden ">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-pink text-vertical p-0 ">
+                            Curabitur Egestas
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-purple p-0 text-vertical">
+                            Quisque Conseq…
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0 overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center text-vertical bg-primary p-0 ">
+                            Cras Convallis
+                        </div>
+                    </div>
+
+                    <div class="img-div position-relative p-0  overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center text-vertical bg-pink p-0 ">
+                            Vestibulum fauci…
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-success text-vertical p-0 ">
+                            Ut Sed Eros
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0 overflow-hidden">
+                        <div class="explore-card  col-sm-12 card border-0 shadow-sm  overflow-hidden ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7 col-sm-7">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center justify-content-center bg-green  p-0 text-vertical ">
+                            Vestibulum faucibu
+                        </div>
+                    </div>
+                    <div class="img-div position-relative p-0  overflow-hidden ">
+                        <div class="explore-card  card col-sm-12 card border-0 shadow-sm   ">
+                            <div class="row g-0 align-items-center overflow-hidden">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="image-wrapper position-relative overflow-hidden">
+                                        <img src="./assets/image/first.webp" class="img-fluid rounded-4 " alt="Food">
+                                        <div class="circle-overlay  top-0 w-100 end-50 h-75  d-flex flex-column 
+                                        justify-content-center align-items-center text-center position-absolute">
+                                            <h5 class="fw-bold">LOREM<br>IPSUM</h5>
+                                            <p class="mb-0 small text-truncate">Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8  col-sm-6 ">
+                                    <div class="card-body">
+                                        <h5 class="card-title fs-sm-5 fw-bold">Integer id Orc Sed Ante Tincidunt</h5>
+                                        <p class="card-text text-muted">
+                                            Cras convallis lacus orci, tristique tincidunt magna fringilla at
+                                            faucibus
+                                            vel.
+                                        </p>
+                                        <div class="stars-price d-flex align-items-center gap-2 mb-2">
+                                            <i class="bi fs-xl-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <i class="bi fs-3 bi-star text-danger"></i>
+                                            <span class="fw-bold ms-2">$450</span>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-primary px-4 fw-bold">EXPLORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="tilt-card d-flex align-items-center text-vertical justify-content-center bg-green p-0 ">
+
+                            Cras Convallis
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="salider-section">
+            <div class="container">
+                <div class="row py-6">
+                    <div class="col-md-6 lh-lg">
+                        <p class="text-uppercase small text-secondary mb-2 font-nunito"><img
+                                src="./assets/svg/Line4.svg" class="img-fluid" />Testimonial</p>
+                        <h2 class="fw-bold mb-3 font-nunito">What They Say?</h2>
+                        <p class="text-muted">
+                            TOTC has got more than 100k positive ratings from our users around the world.
+                            Some of the students and teachers were greatly helped by the Skilline.
+                        </p>
+                        <p class="text-muted">Are you too? Please give your assessment</p>
+                        <div class="row">
+                            <div class="col-sm-12 col-lg-7">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control border-info p-3 rounded-pill"
+                                        placeholder="Write your assessment">
+                                    <button
+                                        class="btn btn-outline-info rounded-circle d-flex align-items-center p-3 justify-content-center btn-light position-absolute top-50 end-0 translate-middle-y">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 pt-sm-5">
+                        <div class="swiper testimonial-swiper position-relative">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/image/salider.webp" alt="slider image"
+                                            class="img-fluid rounded w-100" />
+                                    </div>
+                                    <div class="testimonial-overlay position-absolute bg-white p-4 shadow rounded">
+                                        <p class="mb-2 lh-lg ls-2p">
+                                            "1Thank you so much for your help. It's exactly what I've been looking for.
+                                            You won't regret it. It really saves me time and effort. TOTC is exactly
+                                            what our business has been lacking."
+                                        </p>
+                                        <div class="d-flex justify-content-between pt-3">
+                                            <h6 class="fw-bold mb-0">Gloria Rose</h6>
+                                            <div class="text-warning align-items-center">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <div class="reviwes">
+                                                    <p class="text-muted">12 reviews at Yelp</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/image/salider.webp" alt="slider image"
+                                            class="img-fluid rounded w-100" />
+                                    </div>
+                                    <div class="testimonial-overlay position-absolute bg-white p-4 shadow rounded ">
+                                        <p class="mb-2 lh-lg ls-2p">
+                                            "Thank you so much for your help. It's exactly what I've been looking for.
+                                            You won't regret it. It really saves me time and effort. TOTC is exactly
+                                            what our business has been lacking."
+                                        </p>
+                                        <div class="d-flex justify-content-between pt-3">
+                                            <h6 class="fw-bold mb-0">John Doe</h6>
+                                            <div class="text-warning align-items-center">
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <div class="reviwes">
+                                                    <p class="text-muted">20 reviews at Yelp</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-prev p-3 bg-light  rounded-circle ">
+                                <img src="./assets/svg/right.svg" class="img-fluid rotate-180" />
+                            </div>
+                            <div class="swiper-button-next p-3 bg-light  rounded-circle">
+                                <img src="./assets/svg/right.svg" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container py-5">
+                <div class="row text-center mb-5">
+                    <h2>Latest News and Resources</h2>
+                    <p class="subheading">See the developments that have occurred to TOTC in the world</p>
+                </div>
+
+                <div class="row gap-5">
+                    <div class="col-md-5 d-flex flex-column">
+                        <div class="card border-0">
+                            <img src="./assets/image/news1.webp" class="img-fluid rounded" alt="Main News">
+                        </div>
+                        <div class="py-4">
+                            <button class="btn btn-primary mb-3">NEWS</button>
+                            <h5>Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h5>
+                            <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen...</p>
+                            <a href="#" class="text-decoration-underline">Read more</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 d-flex flex-column justify-content-start">
+                        <div class="row mb-4">
+                            <div class="col-md-5 position-relative text-center">
+                                <img src="./assets/image/news2.webp" class="img-fluid rounded" alt="Press">
+                                <span
+                                    class="px-3 text-truncate rounded-pill bg-primary text-light position-absolute bottom-0 start-50 translate-middle-x">
+                                    PRESS RELEASE
+                                </span>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 class="fs-6 mt-0">Class Technologies Inc. Closes $30 Million Series A Financing to
+                                    Meet
+                                    High Demand</h5>
+                                <p>Class Technologies Inc., the company that created Class,...</p>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-5 position-relative text-center">
+                                <img src="./assets/image/news3.webp" class="img-fluid rounded" alt="News">
+                                <span
+                                    class="px-3 rounded-pill bg-primary text-light position-absolute bottom-0 start-50 translate-middle-x">
+                                    NEWS
+                                </span>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 class="fs-6 mt-0">Zoom’s earliest investors are betting millions on a better Zoom
+                                    for
+                                    schools</h5>
+                                <p>Zoom was never created to be a consumer product. Nonetheless, the...</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 position-relative text-center">
+                                <img src="./assets/image/news4.webp" class="img-fluid rounded" alt="News">
+                                <span
+                                    class="px-3 rounded-pill bg-primary text-light position-absolute bottom-0 start-50 translate-middle-x">
+                                    NEWS
+                                </span>
+                            </div>
+                            <div class="col-md-7">
+                                <h5 class="fs-6 mt-0">Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom
+                                    Classrooms</h5>
+                                <p>This year, investors have reaped big financial returns from betting on Zoom...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bg text-white">
+        <div class="container pt-5">
+            <div class="footer-image  d-flex gap-4 justify-content-center align-items-center">
+                <img src="./assets/image/logo.webp" alt="TOTC" class="footer-logo img-fluid">
+                <img src="./assets/svg/Line-top.svg" class="img-fluid" />
+                <span class="text-white fw-semibold">Virtual Class <br>for Zoom</span>
+            </div>
+            <div class="newsletter mt-5">
+                <h5 class="text-center fw-normal footer-text">Subscribe to get our Newsletter</h5>
+                <form
+                    class="newsletter-form d-flex flex-column flex-md-row justify-content-center align-items-center mt-3 gap-3">
+                    <input type="email"
+                        class="form-control footer-bg rounded-pill border border-light text-white  w-400 h-60"
+                        placeholder="Your email">
+                    <a href="#" class="btn btn-primary text-white  rounded-pill">Subscribe</a>
+                </form>
+            </div>
+            <div class="footer-links mt-5 gap-3 d-flex text-center justify-content-center flex-wrap">
+                <a href="#" class="footer-text">Careers</a>
+                <img src="./assets/svg/Line11.svg" alt="">
+                <a href="#" class="footer-text">Privacy Policy</a>
+                <img src="./assets/svg/Line11.svg" alt="">
+                <a href="#" class="footer-text">Terms & Conditions</a>
+            </div>
+            <p class="text-center pt-4 pb-3 footer-text">2021 Class Technologies Inc.</p>
         </div>
-      </div>
-    </section>
+    </footer>
 
-    <!-- Our Success  -->
-    <section class="our-success text-center py-5">
-      <div class="container">
-        <div class="row justify-content-center my-5">
-          <div class="col-sm-6 ">
-            <h2>Our Success</h2>
-            <p class="text-muted">Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec
-              nam
-              et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. </p>
-          </div>
-        </div>
 
-        <div class="row justify-content-center">
-          <div class="col-6 col-md-4 col-lg-2">
-            <div class="metric">
-              <span class="counter">15K+</span>
-              <p class="mb-0">Students</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <div class="metric">
-              <span class="counter">75%</span>
-              <p class="mb-0">Total Success</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <div class="metric">
-              <span class="counter">35</span>
-              <p class="mb-0">Main Questions</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <div class="metric">
-              <span class="counter">26</span>
-              <p class="mb-0">Chief Experts</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <div class="metric">
-              <span class="counter">16</span>
-              <p class="mb-0">Years of Experience</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-  </main>
-
-  <footer>
-    <section class="py-6 mt-6 text-light">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-4"></div>
-          <div class="col-lg-4">
-            <div class="d-flex justify-content-between mb-5">
-              <a href="#"><img src="./assets/svg/Logo.svg" alt="Logo" class="img-fluid"
-                  aria-label="click here to go to home page"></a>
-              <p class="d-grid align-items-center mb-0 px-5 ps-5 text-white">Virtual Class for Zoom</p>
-            </div>
-
-            <p class="gray-100">Subscribe to get our Newsletter</p>
-            <form action="#" class="d-flex gap-3">
-              <input type="text" class="form-control rounded-pill bg-transparent" placeholder="Your Email">
-              <input type="button" value="Subscribe" class="btn btn-primary text-white rounded-pill">
-            </form>
-
-            <ul class="nav fs-6 py-5 text-center gap-3">
-              <li class="nav-item"><a href="#" class="nav-link text-light p-0">Careers</a></li>
-              <li class="nav-item"><a href="#" class="nav-link text-light p-0">Privacy Policy</a></li>
-              <li class="nav-item"><a href="#" class="nav-link text-light p-0">Terms & Conditions</a></li>
-            </ul>
-
-            <p>© 2021 Class Technologies Inc. </p>
-
-          </div>
-          <div class="col-lg-4"></div>
-        </div>
-      </div>
-      </div>
-    </section>
-  </footer>
-
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".testimonial-swiper", {
+            loop: true,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
+
 
 </html>

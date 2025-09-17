@@ -1,0 +1,15 @@
+.footer-bg{
+    
+  background: $primary-200;
+}
+.footer-text{
+     color: $gray-400;
+}
+@media (min-width: 768px) {
+  .w-400 {
+    width: 400px !important;
+  }
+}
+.h-60 {
+  height: 45px ;
+}

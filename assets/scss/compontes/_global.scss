@@ -1,0 +1,28 @@
+@each $bp, $width in $grid-breakpoints {
+  @media (min-width: $width) {
+    .container-custom {
+      --container-width: #{map-get($container-max-widths, $bp)};
+    }
+  }
+}
+body{
+  font-family: $font-family-base;
+}
+.font-roboto{
+  font-family: $font-roboto;
+}
+.font-nunito
+{
+  font-family: $font-nunito;
+}
+
+
+.container-custom {
+  max-width: calc((100vw - var(--container-width)) / 4 + var(--container-width));
+  margin-left: auto;
+  margin-right: 2rem;
+.row{
+  --bs-gutter-x: 0rem;   
+  --bs-gutter-y: 0;   
+}
+}

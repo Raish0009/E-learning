@@ -1,0 +1,61 @@
+$perfix: 'E-learing-';
+$info: rgba(91, 114, 238, 1);
+$success: rgba(51, 239, 160, 1);
+$primary-200: rgba(37, 38, 65, 1);
+$danger: rgba(249, 187, 28, 1);
+$light: rgba(255, 255, 255, 1);
+$secces-300: rgba(255, 255, 255, 0.3);
+$primary: #49BBBD;
+$info-200:#00BCD4;
+$dark:rgba(0, 0, 0, 0.87);
+
+// Colors
+$gray-900: rgba(105, 105, 132, 1);
+$gray-600: #696984;
+$gray-400: #B2B3CF;
+$gray-200: #83839A;
+
+// Typography
+$font-family-base: 'Poppins', sans-serif;
+$font-nunito: 'Nunito Sans', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+$headings-color: rgba(47, 50, 125, 1);
+$headings-font-weight: 600;
+// $font-size-base:10;
+
+// Link
+$link-color: rgba(255, 255, 255, 1);
+$link-decoration: none;
+
+
+
+
+$sm: 540px;
+$md: 720px;
+$lg: 960px;
+$xl: 1140px;
+$xxl: 1320px;
+// $xxxl:1665px;
+ $container-max-widths: (
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+  xxl: $xxl,
+  // xxxl:$xxxl
+);
+
+
+$btn-padding-y: .78rem;
+$btn-padding-x: 2.23rem;
+$btn-padding-y-lg: 1.5rem;
+$btn-padding-x-lg: 4.5rem;
+
+$btn-font-size-lg: 1rem;
+
+$btn-font-weight: 600;
+
+$btn-border-radius: 80px;
+$btn-border-radius-sm: 0;
+$btn-border-radius-lg: 0;

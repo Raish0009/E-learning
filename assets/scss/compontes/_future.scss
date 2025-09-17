@@ -1,0 +1,210 @@
+
+.list-image {
+  height: 40px;
+  width: 40px;
+}
+
+.explore-course {
+  background-color: rgb(175, 225, 175);
+  font-family: $font-roboto;
+
+  .course-wrapper {
+    .img-div {
+      transform: rotate(-15deg);
+      height: 290px;
+      width: 50px;
+      border: 8px solid #fff;
+      border-radius: 20px;
+      transition: all 0.4s ease-in-out;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+
+      .explore-card {
+        display: none;
+      }
+
+      &:hover {
+        .tilt-card {
+          visibility: hidden;
+        }
+
+        transform: rotate(0deg);
+        width: 400px;
+
+        .explore-card {
+          background-color: white;
+          display: block;
+        }
+      }
+
+      .tilt-card {
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        border-radius: 12px;
+        color: #fff;
+        font-weight: 600;
+        padding: 10px;
+      }
+    }
+
+    .hover-div:hover~.explore-card {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    .hover-div {
+      gap: 2.3rem;
+    }
+  }
+
+
+}
+
+.text-vertical {
+  writing-mode: vertical-rl;
+}
+
+.bg-orange {
+  background: #FF6F00;
+}
+
+.bg-green {
+  background: #6DB4A7;
+}
+
+.bg-pink {
+  background: #FF8374;
+}
+
+.bg-blue {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.bg-purple {
+  background: #B45A1B;
+}
+
+.info-200 {
+  color: $info-200;
+}
+
+.hover-div {
+  display: flex;
+  gap: 2rem;
+
+  .img-div {
+    transform: rotate(-15deg);
+    width: 50px;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+
+    .explore-card {
+      display: none;
+      background: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .tilt-card {
+      visibility: visible;
+    }
+
+    &.active {
+      transform: rotate(0deg);
+      width: 400px;
+
+      .explore-card {
+        display: block;
+      }
+
+      .tilt-card {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &:hover .img-div {
+    transform: rotate(-15deg);
+    width: 50px;
+
+    .explore-card {
+      display: none;
+    }
+
+    .tilt-card {
+      visibility: visible;
+    }
+  }
+
+  .img-div:hover {
+    transform: rotate(0deg);
+    width: 400px;
+
+    .explore-card {
+      display: block;
+    }
+
+    .tilt-card {
+      visibility: hidden;
+    }
+  }
+}
+
+.container-custom {
+  max-width: calc((100vw - var(--container-width)) / 4 + var(--container-width));
+}
+
+.explore-card {
+  .image-wrapper {
+    .circle-overlay {
+      border-radius: 100%;
+      background: rgba(255, 255, 255, 0.9);
+
+      h5 {
+        background: url("../image/first.jpg") no-repeat center/cover;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hover-div {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+    img{
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+    }
+
+    .img-div {
+      transform: rotate(0deg) !important;
+      width: 100% !important;
+      height: auto !important;
+      position: relative !important;
+
+      .explore-card {
+        display: block !important;
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .tilt-card {
+        display: none !important;
+      }
+    }
+  }
+}
